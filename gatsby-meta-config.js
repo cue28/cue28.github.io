@@ -14,12 +14,12 @@ module.exports = {
     name: `전시윤`,
     bio: {
       role: `개발자`,
-      description: ['꾸준히 성장하는', '개발을 즐기는', '편리한 세상을 만드는'],
+      description: ['꾸준히 성장하는', '개발을 즐기는', '편리한 세상을 꿈꾸는'],
       thumbnail: 'siyoonjeon.gif', // Path to the image in the 'asset' folder
     },
     social: {
       github: `https://github.com/cue28`,
-      linkedIn: ``, // `https://www.linkedin.com/in/jinhyeok-jeong-800871192`,
+      linkedIn: ``,
       email: `siyoonjeonn@gmail.com`,
     },
   },
@@ -30,8 +30,8 @@ module.exports = {
       // =====       [Timestamp Sample and Structure]      =====
       // ===== 🚫 Don't erase this sample (여기 지우지 마세요!) =====
       {
-        date: '',
-        activity: '',
+        date: '2021.04 ~ 2021.11',
+        activity: 'Code States Immersive-course 30th',
         links: {
           github: '',
           post: '',
@@ -40,15 +40,13 @@ module.exports = {
           demo: '',
         },
       },
-      // ========================================================
-      // ========================================================
       {
-        date: '2021.02 ~',
-        activity: '개인 블로그 개발 및 운영',
+        date: '2021.12 ~',
+        activity: '주니어 개발자',
         links: {
-          post: '/gatsby-starter-zoomkoding-introduction',
-          github: 'https://github.com/zoomkoding/zoomkoding-gatsby-blog',
-          demo: 'https://www.zoomkoding.com',
+          post: '',
+          github: '',
+          demo: '',
         },
       },
     ],
@@ -57,20 +55,18 @@ module.exports = {
       // =====        [Project Sample and Structure]        =====
       // ===== 🚫 Don't erase this sample (여기 지우지 마세요!)  =====
       {
-        title: '',
-        description: '',
-        techStack: ['', ''],
-        thumbnailUrl: '',
+        title: 'Code High',
+        description: '알고리즘 학습을 돕고 더 나은 코드를 작성할 수 있도록 돕는 저장 플랫폼입니다.',
+        techStack: ['React', 'JavaScript', 'SCSS', 'Webpack'],
+        thumbnailUrl: 'codehigh.png',
         links: {
-          post: '',
-          github: '',
+          post: 'https://codestates.notion.site/12-Code-High-e7d70bdf296449beb5af8350f83231f8',
+          github: 'https://github.com/codestates/Code-High',
           googlePlay: '',
           appStore: '',
-          demo: '',
+          demo: 'https://codehigh.club/',
         },
       },
-      // ========================================================
-      // ========================================================
       {
         title: '개발 블로그 테마 개발',
         description:
