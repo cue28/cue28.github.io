@@ -2,7 +2,7 @@ module.exports = {
   title: `siyoonjeon.com`,
   description: `Siyoon Jeon의 개발일기`,
   language: `ko`, // `ko`, `en` => currently support versions for Korean and English
-  siteUrl: ``,
+  siteUrl: `https://cue28.github.io/`,
   ogImage: `/og-image.png`, // Path to your in the 'static' folder
   comments: {
     utterances: {
