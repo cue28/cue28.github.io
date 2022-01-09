@@ -122,5 +122,4 @@ export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
 1. [Android File Transfer 다운로드](https://www.android.com/filetransfer/)
 
 ```toc
-
 ```
