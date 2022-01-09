@@ -18,7 +18,7 @@ function TimeStampSection({ timestamps }) {
                 {timestamp.links && <IconButtonBar links={timestamp.links} />}
               </div>
             </div>
-          ),
+          )
         )}
       </div>
     </div>
