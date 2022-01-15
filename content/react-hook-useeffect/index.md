@@ -60,6 +60,7 @@ deps 파라미터를 생략한다면 컴포넌트가 리렌더링 될 때마가 
 참고.
 - 리액트 공식문서 
 - https://react.vlpt.us/basic/16-useEffect.html
+- [useEffect 완벽 가이드 번역](https://rinae.dev/posts/a-complete-guide-to-useeffect-ko)
 
 
 ```toc
