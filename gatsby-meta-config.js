@@ -41,7 +41,7 @@ module.exports = {
         },
       },
       {
-        date: '2021.12 ~',
+        date: '2021.12.20 ~',
         activity: '프론트엔드 엔지니어',
         links: {
           post: '',

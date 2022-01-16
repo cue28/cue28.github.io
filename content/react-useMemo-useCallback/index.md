@@ -3,8 +3,8 @@ emoji: 📞
 title: 렌더링 최적화, useMemo & useCallback
 date: '2022-01-15 21:14:00'
 author: Siyoon Jeon
-tags: blog
-categories: blog
+tags: usememo and usecallback
+categories: react
 ---
 
 ## useMemo
