@@ -42,21 +42,10 @@ module.exports = {
       },
       {
         date: '2021.12.20 ~',
-        activity: '프론트엔드 엔지니어',
+        activity: 'Frontend',
         links: {
           post: '',
           github: '',
-          demo: '',
-        },
-      },
-      {
-        date: '2021.04 ~ 2021.11',
-        activity: 'Code States Immersive-course 30th',
-        links: {
-          github: '',
-          post: '',
-          googlePlay: '',
-          appStore: '',
           demo: '',
         },
       },
@@ -78,19 +67,6 @@ module.exports = {
         },
       },
       {
-        title: 'Issue Here',
-        description: 'Repository 검색 및 issue 모아보기 서비스입니다.',
-        techStack: ['React', 'JavaScript', 'Styled-components'],
-        thumbnailUrl: 'issuehere.png',
-        links: {
-          post: '',
-          github: 'https://github.com/cue28/issueHere',
-          googlePlay: '',
-          appStore: '',
-          demo: '',
-        },
-      },
-      {
         title: 'Bucket Bingo',
         description: '빙고 게임을 활용한 목표 달성 웹 서비스입니다.',
         techStack: ['React', 'TypeScript', 'SCSS'],
@@ -100,7 +76,7 @@ module.exports = {
           github: 'https://github.com/cue28/BucketBingo-Client',
           googlePlay: '',
           appStore: '',
-          demo: 'https://bucketbingo.world/',
+          demo: '',
         },
       },
       {
@@ -113,7 +89,7 @@ module.exports = {
           github: 'https://github.com/codestates/Code-High',
           googlePlay: '',
           appStore: '',
-          demo: 'https://codehigh.club/',
+          demo: '',
         },
       },
     ],
