@@ -89,9 +89,28 @@ const App = () => {
 ```js
 export default React.memo(whatsDay);
 ```
-이는 불필요한 props 비교만하는 것이기에 실제로 렌더링을 방지 할 수 있는 상황이 있는 경우에만 사용하며, 두번째 파라미터에 `propsAreEqual`이라는 함수를 사용한마녕 특정 값을 비교하는 것이 가능하다. 하지만 의도치 않은 버그들이 발생하기 쉬움으로 지양하는 것이 좋다.
+이는 불필요한 props 비교만하는 것이기에 실제로 렌더링을 방지 할 수 있는 상황이 있는 경우에만 사용하며, 두번째 파라미터에 `propsAreEqual`이라는 함수를 사용하면 특정값을 비교하는 것이 가능하다. 하지만 의도치 않은 버그들이 발생하기 쉬움으로 지양하는 것이 좋다.
 
 리액트 개발을 할 때, useCallback, useMemo, React.memo는 실제 컴포넌트의 성능의 개선할 수 있을 때만 사용해야한다. 사용한다고 해서 리렌더링을 막을 수 있는게 아니라면 굳이 사용할 필요는 없다.
+
+## 최적화 vs 발적화
+
+- 실행되는 모든 코드는 각각 한 줄마다 비용이 든다.
+- 실제로 퍼포먼스 개선이 없는 부분에서 `useCallback` 호출, 의존성 배열(`[]`) 을 선언해 주면서 리소스를 더 잡아먹음. →  초과비용, 불필요한 비교
+- 게다가 함수 자체를 메모이제이션 해두기 위해 추가로 메모리를 잡아먹게 된다.
+- 결국 코드 최적화 한다고 들인 공에 비해 얻을 수 있는 이득은 미미
+- 이런 고민 할 시간에 발적화를 방지하면서 제품 자체를 더 좋게 만드는게 훨씬 이득일 수 있다.
+
+## 결론
+
+최적화는 진짜 필요할 때까지 기다리는 것이다.
+리액트는 충분히 빠르다. 성급한 최적화는 독이 될 수 있으므로, 
+진짜 필요할 때까지 피하며 책임감있게 최적화하자 !
+
+- 어떻게?
+    - 퍼포먼스 측정
+    - 정확한 측정 없이 “이 코드가 퍼포먼스에 문제를 일으킬 수 있다.” 고 여긴다면 성급한 최적화를 할 수도 있다.
+    - 특정 컴포넌트가 퍼포먼스 문제를 일으킨다고 판단되면 **명확한 검증을 통해** 판단이 맞는지 확인한 후 최적화 과정을 거치도록 하자 !
 
 이 글을 모두 이해한다면 [이 블로그](https://rinae.dev/posts/review-when-to-usememo-and-usecallback)를 본다면 좋을 것 같다.
 
@@ -101,6 +120,8 @@ export default React.memo(whatsDay);
 - https://react.vlpt.us/basic/17-useMemo.html
 - https://leehwarang.github.io/2020/05/02/useMemo&useCallback.html
 - https://kentcdodds.com/blog/usememo-and-usecallback
+- https://ui.toast.com/weekly-pick/ko_20190731
+- https://medium.com/myrealtrip-product/fe-website-perf-part2-e0c7462ef822
 
 
 ```toc
