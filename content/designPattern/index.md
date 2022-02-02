@@ -1,5 +1,5 @@
 ---
-emoji: 
+emoji: 📖
 title: 디자인 패턴
 date: '2022-02-01 20:42:00'
 author: Siyoon Jeon
